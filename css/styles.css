@@ -1,0 +1,212 @@
+/**Colors/variables**/
+
+:root {
+    /*los que inicien con dos puntos, no existen como tal en html, se les conoce como pseudoelementos*/
+    --blanco: #ffffff;
+    --dark: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+
+/**rem format**/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top, #DFE9F3 0%, var(--blanco) 100%);
+    /*se hace un degradado de abajo hacia arriba, empezando des un color gris claro hasta el blanco*/
+}
+
+
+/**Utilities**/
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3.8rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(79, 76, 79, 0.84);
+    border-radius: 1rem;
+}
+
+
+/**Contendor**/
+
+.contenedor {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+
+/**Botones**/
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .boton {
+        width: auto;
+    }
+}
+
+
+/**Header**/
+
+.titulo span {
+    font-size: 2rem;
+}
+
+
+/**Navegación**/
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secundario);
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.32rem;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--dark);
+}
+
+@media (min-width: 480px) {
+    .navegacion-principal a {
+        font-size: 2rem;
+    }
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.contenido-hero {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*centrado verticalmente porque esta en columna*/
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    margin: 1rem 0 2rem 0;
+    /*margin-bottom: 2rem;*/
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor h2 {
+    padding: 4rem 0;
+}
+
+.secciones {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+@media (min-width: 760px) {
+    .secciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: 500;
+}
+
+.icono {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primario);
+    border-radius: 50%;
+}
+
+.servicio p {
+    line-height: 2;
+}
+
+
+/*
+.secciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secciones section {
+    flex: 0 0 calc(33.3% - 2rem);
+}*/
