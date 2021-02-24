@@ -1,2 +1,3 @@
-# P-gina_Freelancer
-Primera página creada del curso Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL, después de la actualización
+Pagina_Freelancer
+Primera página creada del curso Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL, después de la actualización.
+Solo el index. Visita la pagina en el siguiente enlace --> https://elastic-tereshkova-0881fa.netlify.app/
